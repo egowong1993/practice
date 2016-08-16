@@ -1,0 +1,24 @@
+  <html>
+<head>
+<script>
+function merge(arr1,arr2)
+{
+    
+    for(var i = 0;i<arr2.length;i++)
+    {
+        var x =arr2[i][0];
+        var y =arr2[i][1];
+        arr1[x][y] = 1;
+    }
+    return arr1;
+    
+}
+var arr1 =  [[0,0,0,0],
+            [0,0,0,0],
+            [0,0,0,0],
+            [0,0,0,0]];
+var arr2 = [[1,3],[1,2],[2,2]];
+merge(arr1,arr2);
+</script>
+</head>
+</html>

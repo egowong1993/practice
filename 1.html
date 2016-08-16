@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+function heji(arr)
+{
+    var res = [];
+    for(var i=1;i<arr.length;i++)
+    {
+        var str1 = arr.slice(0,i).join(" ");
+        var str2 = arr.slice(i).join(" ");
+        var arr1 = [str1,str2];
+        res.push(arr1)
+    }
+    return res;
+}
+</script>
+</head>
+</html>
